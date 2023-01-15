@@ -3,6 +3,6 @@ public class Main {
         Solution solution = new Solution();
         System.out.println(
                 solution
-                .myAtoi("words and 987"));
+                .myAtoi("+987"));
     }
 }
