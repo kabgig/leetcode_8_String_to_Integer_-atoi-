@@ -10,7 +10,7 @@ class Solution {
         ArrayList<String> digits = new ArrayList<>();
 
         for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(1) == '+' || word.charAt(1) == '-') break;
+            if (word.length() > 1 && (word.charAt(1) == '+' || word.charAt(1) == '-')) break;
             if (Character.isDigit(word.charAt(i)) ||
                     word.charAt(i) == '-' ||
                     word.charAt(i) == '+'
