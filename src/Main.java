@@ -3,6 +3,6 @@ public class Main {
         Solution solution = new Solution();
         System.out.println(
                 solution
-                .myAtoi("00000-42"));
+                .myAtoi("3.14159"));
     }
 }

@@ -18,15 +18,16 @@ class Solution {
                             word.charAt(0) == ' '
             )) break;
 
-            if (word.charAt(0) == '0' && word.charAt(1) == '0') break;
-
-            if (word.length() > 1 && (word.charAt(1) == '+' || word.charAt(1) == '-')) break;
+            if (word.length() > 1 && (
+                            word.charAt(1) == '+' ||
+                            word.charAt(1) == '-' ||
+                           !Character.isDigit(word.charAt(1)))) break;
 
             if (Character.isDigit(word.charAt(i)) ||
-                    (word.charAt(i) == '-' && word.length() > 1) ||
-                    (word.charAt(i) == '+' && word.length() > 1)
-            ) digits.add(Character.toString(word.charAt(i)));
-
+                    (word.charAt(0) == '-' && word.length() > 1 && i==0) ||
+                    (word.charAt(0) == '+' && word.length() > 1 && i==0)
+            )
+            digits.add(Character.toString(word.charAt(i)));
             else break;
         }
 
