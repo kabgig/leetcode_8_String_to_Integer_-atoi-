@@ -3,6 +3,6 @@ public class Main {
         Solution solution = new Solution();
         System.out.println(
                 solution
-                .myAtoi("   -0345 with words 0505"));
+                .myAtoi("words and 987"));
     }
 }

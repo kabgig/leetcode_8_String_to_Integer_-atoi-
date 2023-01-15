@@ -12,6 +12,7 @@ class Solution {
         for (int i = 0; i < word.length(); i++) {
             if (Character.isDigit(word.charAt(i)) || word.charAt(i) == '-')
                 digits.add(Character.toString(word.charAt(i)));
+            else if (digits.isEmpty()) continue;
             else break;
         }
 
