@@ -11,7 +11,7 @@ class Solution {
         for (int i = 0; i < word.length(); i++) {
             if (word.length() == 1 && !Character.isDigit(word.charAt(0))) break;
 
-            if (!Character.isDigit(word.charAt(1))) break;
+            if (!Character.isDigit(word.charAt(1)) && !digits.isEmpty()) break;
 
             if (Character.isDigit(word.charAt(i)) ||
                     (word.charAt(0) == '-' && i==0) ||
