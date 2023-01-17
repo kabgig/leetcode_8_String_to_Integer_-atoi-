@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution3 solution = new Solution3();
         System.out.println(
-                solution
-                .myAtoi("+-12"));
+                solution.myAtoi("-91283472332"));
     }
 }
